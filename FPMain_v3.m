@@ -7,7 +7,7 @@ clc;
 
 fprintf("Drawbot Initializing...\n")
 % Input image
-I = imread('leaf.jpg'); 
+I = imread('pleaf.jpg'); 
 
 % Show image
 figure(1); imshow(I);
