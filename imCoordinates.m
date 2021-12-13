@@ -7,6 +7,7 @@ function [B] = imCoordinates(I,yOffset,xOffset,imWidth, res);
 % keep every 5th way point.
 %Get length of largest array dimension
 imLen = length(I);
+I=flipud(I);
 
 %Find edges in grayscale image using Canny method and specified thresholds
 [BW,thre] = edge(rgb2gray(I),'Canny',[0.0813 0.1281]); 
